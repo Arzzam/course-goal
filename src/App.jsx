@@ -5,6 +5,10 @@ import CourseInput from "./components/CourseGoals/CourseInput/CourseInput";
 import styled from "styled-components";
 import Footer from "./components/Footer/Footer";
 
+const FooterDiv = styled.div`
+  padding-top: 4rem;
+`;
+
 const GoalForm = styled.section`
   width: 30rem;
   max-width: 90%;
@@ -67,9 +71,9 @@ function App() {
         } */}
         </Goals>
       </div>
-      <div>
+      <FooterDiv>
         <Footer />
-      </div>
+      </FooterDiv>
     </div>
   );
 }
