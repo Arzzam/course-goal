@@ -1,7 +1,7 @@
 {
   "name": "course-goal",
   "version": "0.1.0",
-  "homepage": "https://arzzam.github.io/coures-goal",
+  "homepage": "https://arzzam.github.io/course-goal",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
