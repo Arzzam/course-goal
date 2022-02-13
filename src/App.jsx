@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import CourseGoalList from "./components/CourseGoals/CourseGoalList/CourseGoalList";
 import CourseInput from "./components/CourseGoals/CourseInput/CourseInput";
 import styled from "styled-components";
+import Footer from "./components/Footer/Footer";
 
 const GoalForm = styled.section`
   width: 30rem;
@@ -51,19 +52,24 @@ function App() {
 
   return (
     <div>
-      <GoalForm>
-        <CourseInput onAddGoal={addGoalHandler} />
-      </GoalForm>
-      <Goals>
-        {content}
-        {/* {courseGoals.length > 0 && (
+      <div>
+        <GoalForm>
+          <CourseInput onAddGoal={addGoalHandler} />
+        </GoalForm>
+        <Goals>
+          {content}
+          {/* {courseGoals.length > 0 && (
           <CourseGoalList
             items={courseGoals}
             onDeleteItem={deleteItemHandler}
           />
         ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
         } */}
-      </Goals>
+        </Goals>
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
