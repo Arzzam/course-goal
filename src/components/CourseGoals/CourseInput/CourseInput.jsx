@@ -55,13 +55,18 @@ function CourseInput(props) {
       return;
     }
     props.onAddGoal(enteredValue);
+    setEnteredValue("");
   }
 
   return (
     <form onSubmit={formSubmitHandler}>
       <FormControl className={!validInput && "invalid"}>
         <label>Course Goal</label>
-        <input type="text" onChange={goalInputChangeHandler} />
+        <input
+          type="text"
+          onChange={goalInputChangeHandler}
+          value={enteredValue}
+        />
       </FormControl>
       <Button type="submit">Add Goal</Button>
     </form>
